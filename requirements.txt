@@ -1,0 +1,8 @@
+flask
+flask-socketio
+flask-cors
+eventlet
+opencv-python-headless
+sgfmill
+torch
+torchvision
