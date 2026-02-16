@@ -65,6 +65,8 @@
         socket.on("status", (data) => {
             if (data.running) {
                 setStatus("online", "引擎就绪");
+                // 引擎就绪后自动分析当前局面（包括空棋盘开局）
+                requestAnalysis();
             } else {
                 setStatus("offline", "引擎未运行");
             }
